@@ -40,7 +40,7 @@ public class MainActivity extends FragmentActivity {
         getAdvice();
     }
 
-    private String getAdvice() {
+    private void getAdvice() {
 
         Request request = new Request
                 .Builder()
@@ -71,7 +71,5 @@ public class MainActivity extends FragmentActivity {
                         "Нет соединения. Попробуйте еще раз или чуть позже", Toast.LENGTH_LONG).show());
             }
         });
-
-        return "";
     }
 }
