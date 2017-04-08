@@ -35,12 +35,12 @@ public class MainActivity extends FragmentActivity {
         adviceView = (TextView) findViewById(R.id.advice);
         TextView moreButton = (TextView) findViewById(R.id.more_button);
 
-        moreButton.setOnClickListener(view -> getAdviceView());
+        moreButton.setOnClickListener(view -> getAdvice());
 
-        getAdviceView();
+        getAdvice();
     }
 
-    private String getAdviceView() {
+    private String getAdvice() {
 
         Request request = new Request
                 .Builder()
