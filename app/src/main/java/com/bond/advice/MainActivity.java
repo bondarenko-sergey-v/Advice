@@ -36,6 +36,11 @@ public class MainActivity extends FragmentActivity {
         TextView moreButton = (TextView) findViewById(R.id.more_button);
 
         moreButton.setOnClickListener(view -> getAdvice());
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
 
         getAdvice();
     }
